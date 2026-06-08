@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* @keyframes changeBackgroundColor {
+  from {
+    background-color: white;
+    border-radius: 0px;
+    scale: 1;
+    transform: translateX(0px);
+  }
+
+  to {
+    background-color: red;
+    border-radius: 50%;
+    scale: 0.5;
+    transform: translateX(40px);
+  }
+} */
+
+/* discrete properties in css */
+
+/* @property --bgColor {
+  syntax: "<color>";
+  initial-value: green;
+  inherits: false;
+}
+
+@keyframes animateBgColor {
+  from {
+    --bgColor: red;
+  }
+  to {
+    --bgColor: blue;
+  }
+} */
+
+/* .box {
+  height: 200px;
+  width: 200px;
+  background-color: var(--bgColor);
+  animation: animateBgColor 3s; */
+/* background-color: white;
+  animation: changeBackgroundColor 5s infinite forwards alternate;
+  border: 10px solid greenyellow; */
+/* background: conic-gradient(from 135deg ,red,blue,red); */
+/* background-color: rgba(255, 255, 255, 0.607);
+  box-shadow: inset 0px 0px 50px red; */
+/* inset : shadow inside the box  only for box shadow */
+/* } */
+
+/* h1{
+  font-family: monospace;
+  font-size: 3rem;
+  color: rgb(29, 67, 166);
+  text-shadow: 5px 5px 1px rgb(120, 22, 155);
+} */
+
+/* practice */
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes borderAnimate {
+  from {
+    --rotate: 0deg;
+  }
+  to {
+    --rotate: 360deg;
+  }
+}
+
+.box {
+  max-width: 300px;
+  padding-inline: 10px;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 60px red;
+  border-radius: 15px;
+  background:
+    linear-gradient(black) padding-box,
+    conic-gradient(from var(--rotate), black, red, black) border-box;
+  border: 5px solid rgba(255, 255, 255, 0);
+  margin: 10px;
+  animation: borderAnimate 10s;
+  animation-iteration-count: infinite;
+}
+
+.box img {
+  width: 100%;
+}

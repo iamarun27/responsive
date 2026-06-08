@@ -17,7 +17,7 @@ para.addEventListener("mouseenter", () => {
       .join("");
 
     para.innerText = str;
-    iteration += 0.2;
+    iteration += 0.33;
     // console.log(str);
   }, 30);
 });
