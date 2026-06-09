@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  anchor-name: --some-anchor;
+  /* gap: 30px; */
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.box:hover {
+  anchor-name: --some-anchor;
+}
+
+.red {
+  background-color: rgb(142, 16, 16);
+  /* anchor-name: --some-anchor; */
+  /* target element */
+}
+
+.blue {
+  background-color: rgb(17, 17, 97);
+  /* anchor-name: --some-anchor; */
+}
+
+.green {
+  background-color: rgb(13, 80, 13);
+}
+
+.anchor {
+  background-color: gray;
+  border-radius: 10px;
+  position: absolute;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  pointer-events: none;
+  /* height: 50px;
+  width: 60px; */
+  position-anchor: --some-anchor;
+  transition: all 0.3s linear;
+  mix-blend-mode: difference;
+  /* gives opposite color */
+}
+
+
+
+/* hash selector */
+
+
